@@ -1,0 +1,27 @@
+:root{
+    --font-family: "Roboto", "Ariel";
+    --backgorund-color: rgb(230, 243, 254);  
+}
+
+*{
+    font-family: var(--font-family);
+}
+
+header,main,footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    background-color: var(--backgorund-color);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 0.5rem solid rgba(0, 0, 0, 0.5) ;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+section{
+    padding: 1rem;
+    background-color: white;
+}
