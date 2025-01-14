@@ -1,0 +1,118 @@
+:root{
+    --font-family: "Roboto", "arial";
+    --background-color-title: rgb(29, 77, 114);
+    --background-color: rgb(255, 255, 255);
+    --nav-back-color: #8F431C;
+    --dark-faint: rgba(0,0,0,0.2);
+    --white-faint: rgba(255,255,255,0.2);
+    --txt-color-title: rgb(255, 255, 255);
+    --txt-color-info: rgb(0, 0, 0);
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: var(--font-family);
+}
+
+
+
+header, nav, main, footer{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--background-color-title);
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 0;
+}
+img{
+    padding: 1rem;
+}
+
+
+span{
+    color: var(--txt-color-title);
+    font-size:x-large;
+    font-weight: 700;
+}
+
+nav{
+    background-color: var(--nav-back-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: 0;
+}
+
+nav a{
+    font-size:large;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 0.02rem;
+    color: var(--txt-color-title);    
+}
+
+nav a:first-of-type {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav a:hover{
+    background-color: var(--white-faint);
+}
+
+
+
+ul{
+    list-style-type:none;
+    padding: 1rem;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 0.2rem solid var(--dark-faint);
+    width: fit-content;
+    justify-self: center;
+}
+
+.card{
+    margin-top: 1rem;
+    border: 0.2rem solid var(--dark-faint);
+    border-radius: 0.5rem;
+}
+
+h2{
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--background-color-title);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    color: var(--txt-color-title);
+}
+
+footer{
+    text-align: center;
+    background-color: var(--background-color-title);
+    padding: 1rem 0;
+    border-radius: 1rem;
+    color: var(--txt-color-title);
+}
+
+#currentyear{
+    font-size: medium;
+    font-weight: 400;
+}
