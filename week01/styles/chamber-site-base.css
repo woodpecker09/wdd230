@@ -1,0 +1,34 @@
+:root{
+    --font-family: "Sans", Arial;
+    --main-backgorund-color: rgb(30, 61, 90);
+    --info-color: rgb(0, 0, 0);
+}
+*{
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+}
+header, main, footer, nav{
+    width: 800px;
+    margin: 1rem auto;
+}
+header{
+    text-align: center;
+    background-color: var(--main-backgorund-color);
+    color: white;
+}
+nav{
+    text-align: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+ol{
+    padding-left: 1.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
