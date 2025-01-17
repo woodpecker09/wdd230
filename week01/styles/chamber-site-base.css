@@ -1,34 +1,72 @@
 :root{
     --font-family: "Sans", Arial;
-    --main-backgorund-color: rgb(30, 61, 90);
-    --info-color: rgb(0, 0, 0);
+    --backgorund-color:  #20282E;
+    --info-color: #F2F1EF;
 }
 *{
     font-family: var(--font-family);
     padding: 0;
     margin: 0;
 }
-header, main, footer, nav{
+
+body{
     width: 800px;
     margin: 1rem auto;
-}
-header{
-    text-align: center;
-    background-color: var(--main-backgorund-color);
-    color: white;
-}
-nav{
-    text-align: center;
-}
-main{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    text-align: start;
+    grid-gap: 1rem;
 }
-ol{
-    padding-left: 1.5rem;
+.line{
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 0.5rem;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
+header{
+    text-align: center;
+    background-color: var(--backgorund-color);
+    color: var(--info-color);
+}
+
+.color-schema, .scenarios{
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.color{
+    height: 20px;
+    width: 20px;
+    border-radius: 1rem;
+}
+.first{
+    background-color: #6B331E;
+}
+.second{
+    background-color: #20282E;
+}
+.third{
+    background-color: #331107;
+}
+.fourth{
+    background-color: #170300;
+}
+.fifth{
+    background-color: #F2F1EF;
+}
+
+ol,ul{
+    padding-left: 2rem;
+}
+div{
+    display: inline-block;
+}
+
+.wireframe{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+h3{
+    display: inline-block;
 }
