@@ -15,16 +15,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/switch.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/burgerMenu.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Harold B. Ortega Profile Picture" width="75" height="100">
+        <img src="images/profile.jpg" alt="Harold B. Ortega Profile Picture" width="75" height="100" id="profilePic">
         <span>Harold B. Ortega</span>
+        <div id="colorTheme">
+            <input type="checkbox" id="theme">
+            <label for="theme" class="toggleSwitch">
+                    <img src="images/moon.svg" alt="moon icon" class="moon">
+                    <img src="images/sun.svg" alt="sun icon" class="sun">
+            </label>
+        </div>
     </header>
-    <nav> 
+
+    <nav>
+        <button id="menuButton" aria-label="Menu"></button>
         <a href="#" class="active">Home</a>
         <a href="#">Chamber</a>
         <a href="week01/chamber-site-plan.html">Site Plan</a>
@@ -42,7 +54,7 @@
                     <a href="#">JS Pen</a>  
                 </li>
                 <li>
-                    Week02
+                    Week02:
                     <a href="week02/design.html">Web Design Principles</a> |
                     <a href="https://codepen.io/woodpecker09/pen/EaYpBpR?editors=0110">Responsive "Hamburger" Menu</a> |
                     <a href="week02/bom.html">JavaScript: DOM Manipulation</a> 
