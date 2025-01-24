@@ -1,0 +1,144 @@
+:root{
+    --font-family-info:"Montserrat", Arial;
+    --font-family-title: "Roboto", Arial;
+    --backgorund-color:  #F2F1EF;
+    --title-color: #F2F1EF;
+    --info-color: #170300;
+    --links-color:#6B331E;
+    --head-back-color: #170300;
+    --borders-and-random:#20282E;
+    --backgorund-color: #331107;
+    --dark-faint: rgba(0,0,0,0.2);
+    --white-faint: rgba(255,255,255,0.2);
+}
+header, main, footer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.title{
+    padding: 1rem;
+    display: grid;
+    width: fit-content;
+
+}
+.title h1{
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+}
+.title h3{
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+main picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+header{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    position: relative;
+    background-color: var(--links-color);
+    color: var(--title-color);
+}
+
+
+.mainNav{
+    background-color: var(--nav-back-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: 0;
+    grid-column: 1/3;
+}
+
+.mainNav a{
+    display: none;
+    font-size:large;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--title-color);
+}
+
+.show a{
+    display: block;
+}
+
+#menuButton {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .2rem .75rem;
+	background-color: var(--txt-color-title);
+	color: var(--nav-back-color);
+    justify-self: center;
+    border: 1px solid var(--txt-color-title);
+    border-radius: 100%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+#menuButton::before {
+	content: "≡";
+}
+
+#menuButton.show::before {
+	content: "x";
+} 
+
+nav a:first-of-type {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav a:hover{
+    background-color: var(--white-faint);
+}
+
+.logo{
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+/* ----main---- */
+main{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.banner{
+    position: relative;
+}
+
+.callToAction{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: rgba(156, 156, 156, 0.566);
+    margin: 1rem;
+    padding: 1rem;
+   
+}
+.card h2{
+
+    border-bottom: 1px solid gray;
+}
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+}

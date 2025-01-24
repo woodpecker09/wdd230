@@ -9,15 +9,18 @@
         display: block;
     }
 
-    main{
-        grid-template-columns: 2fr 1fr;
-    }
-    main h1{
-        grid-column: 1/3;
-    }
-
     #menuButton {
 		display: none;
 	}
+
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+    .banner{
+        grid-column: 1/3;
+    }
+    #spotlight{
+        grid-column:  1/3;
+    }
 
 }
