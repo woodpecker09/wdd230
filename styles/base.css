@@ -1,9 +1,9 @@
 :root{
     --font-family: "Roboto", "arial";
+    --font-for-hero: "Playwrite IN", arial;
     --background-color-title: rgb(29, 77, 114);
     --background-color: rgb(255, 255, 255);
     --nav-back-color: #8F431C;
-    /* --boder-card:#f8a880; */
     --boder-card: #8F431C;
     --dark-faint: rgba(0,0,0,0.2);
     --white-faint: rgba(255,255,255,0.2);
@@ -157,4 +157,35 @@ footer{
 #currentyear{
     font-size: medium;
     font-weight: 400;
+}
+.hero{
+    position:relative ;
+}
+
+.herolabel{
+    position:absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.herolabel p{
+    font-size: medium;
+    font-weight: 700;
+    font-family: "Playwrite IN";
+}
+
+.hero picture img{
+    width: 100%;
+    height: auto;
+}
+
+iframe{
+    width: 100%;
+}
+#lable{
+    text-align: center;
+}
+.label, .visits{
+    color: var(--txt-color-info);
+    font-size: medium;
+    font-weight: 500;
 }

@@ -13,7 +13,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/switch.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -21,10 +21,11 @@
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/burgerMenu.js" defer></script>
     <script src="scripts/theme.js" defer></script>
+    <script src="scripts/getVisit.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Harold B. Ortega Profile Picture" width="75" height="100" id="profilePic">
+        <img src="images/profile.webp" alt="Harold B. Ortega Profile Picture" width="75" height="100" id="profilePic" loading="lazy">
         <span>Harold B. Ortega</span>
         <div id="colorTheme">
             <input type="checkbox" id="theme">
@@ -43,6 +44,16 @@
         <a href="#">Form</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="temple-image" width="1500" height="750" loading="lazy">
+            </picture>
+            <div class="herolabel">
+                <p>Provo City Center Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -79,9 +90,11 @@
         </section>
         <section class="card">
             <h2>Information</h2>
-
+            <p id="lable"><span class="label">Visit Count: </span><span class="visits"></span></p>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.780323170933!2d-80.91359057478802!3d-2.2219374317266496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902e069afccbb0c5%3A0x72915e172091f926!2sLa%20Libertad%2C%20Ecuador!5e0!3m2!1sen!2sus!4v1738221120713!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+    
     <footer>
         <p>&copy; <span id="currentyear"></span> 👾 Harold B. Ortega Villavicencio 👾 Ecuador</p>
         <p id="lastModified"></p>
