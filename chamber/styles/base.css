@@ -25,16 +25,14 @@ header, main, footer{
 
 .title{
     padding: 1rem;
-    display: grid;
     width: fit-content;
-
-}
-.title h1{
     font-size: xx-large;
     margin: 0;
     padding: 0;
 }
-.title h3{
+
+.subtitle{
+    display: block;
     font-size: small;
     margin: 0;
     padding: 0;
