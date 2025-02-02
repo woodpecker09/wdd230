@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provo UT Chamber of Commerce Project</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Harold B. Ortega, La Libertad Chamber of Commerce Project">
+    <meta name="author" content="Harold Brahms Ortega Villavicencio">
+    <meta property="og:title" content="Harold Brahms Ortega Villavicencio - WDD 230 - Web Frontend Development - La Libertad Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mir-s3-cdn-cf.behance.net/project_modules/source/3396cf62867677.5a9e7f2910860.jpg">
+    <meta property="og:url" content="https://woodpecker09.github.io/wdd230/chamber/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/burgerMenu.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/calendar.js" defer></script>
+    <script src="scripts/visitDate.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" >
+            <img src="https://placehold.co/50x50" alt="logo" class="logo">
+        </a>
+        <section class="title">
+            <h1>Provo UT</h1>
+            <h3>Chamber of Commerce Project</h3>
+        </section>
+        <nav class="mainNav">
+            <button id="menuButton" aria-label="Menu"></button>
+            <a href="#" class="active">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>    
+    </header>
+
+
+    <main>
+        <aside id="sidebar">
+            <div class="side visitDate">
+                
+            </div>
+            <div class="side demographics">
+                <h2>Demographics</h2>
+                <ul>
+                    <li>
+                        <p>
+                            <span>Population:</span>
+                            114,400
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>Median age:</span>
+                            23.6
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="side  events">
+                <h2>Lorem, ipsum dolor!!</h2>
+                <img src="https://placehold.co/250x200" alt="event">
+                <p>00/00/0000 1234 Road 12 Av Provo, UT</p>
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                  <button id="prev">&lt;</button>
+                  <span id="month-year"></span>
+                  <button id="next">&gt;</button>
+                </div>
+                <div class="calendar" id="calendar"></div>
+            </div>
+        </aside>
+        <div class="provoPics">
+            <picture class="provoPic">
+                <source media="(min-width: 1000px)" srcset="images/largeimage1.webp">
+                <source media="(min-width: 500px)" srcset="images/medium1.webp">
+                <img src="images/small1.webp" alt="place1" width="500" height="250" loading="lazy">
+            </picture>
+            <picture class="provoPic">
+                <source media="(min-width: 1000px)" srcset="images/largeimage2.webp">
+                <source media="(min-width: 500px)" srcset="images/medium2.webp">
+                <img src="images/small2.webp" alt="place1" width="500" height="250" loading="lazy">
+            </picture>
+            <picture class="provoPic">
+                <source media="(min-width: 1000px)" srcset="images/largeimage3.webp">
+                <source media="(min-width: 500px)" srcset="images/medium3.webp">
+                <img src="images/small3.webp" alt="place1" width="500" height="250" loading="lazy">
+            </picture>
+            <picture class="provoPic">
+                <source media="(min-width: 1000px)" srcset="images/largeimage4.webp">
+                <source media="(min-width: 500px)" srcset="images/medium4.webp">
+                <img src="images/small4.webp" alt="place1" width="500" height="250" loading="lazy">
+            </picture>
+            <picture class="provoPic">
+                <source media="(min-width: 1000px)" srcset="images/largeimage5.webp">
+                <source media="(min-width: 500px)" srcset="images/medium5.webp">
+                <img src="images/small5.webp" alt="place1" width="500" height="250" loading="lazy">
+            </picture>
+            <picture class="provoPic">
+                <source media="(min-width: 1000px)" srcset="images/largeimage6.webp">
+                <source media="(min-width: 500px)" srcset="images/medium6.webp">
+                <img src="images/small6.webp" alt="place1" width="500" height="250" loading="lazy">
+            </picture>
+          
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram.webp" alt="Twitter">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.webp" alt="Instagram">
+            </a>
+        </nav>
+            
+        This is NOT an official website, this website is a Project for: WDD 230 - Web Frontend Development
+        <p>&copy; <span id="currentyear"></span> 👾 Harold B. Ortega Villavicencio 👾 Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
