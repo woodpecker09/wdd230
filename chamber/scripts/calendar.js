@@ -22,11 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   
       const firstDay = new Date(year, month, 1).getDay();
-      console.log(firstDay);
 
       const daysInMonth = new Date(year, month + 1, 0).getDate();
-      console.log(daysInMonth);
-  
+      
       for (let i = 0; i < firstDay; i++) {
         const blank = document.createElement('div');
         blank.className = 'date';
