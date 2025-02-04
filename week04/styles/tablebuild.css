@@ -1,0 +1,41 @@
+:root{
+    --head-back-colo: rgb(0, 0, 0);
+    --head-colo: rgb(255, 255, 255);
+    --shadow: hsl(0, 0%, 27%);
+    --fade: rgbA(0,0,0,0.3);
+    --zebra: hsl(0, 0%, 93%, 1);
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+table {
+	margin: 10px auto;
+	border: thin solid var(--shadow);
+	border-collapse: collapse;
+    text-align: center;
+}
+
+caption{
+    caption-side:bottom; 
+}
+thead tr th:nth-child(1){
+    background-color: var(--head-back-colo);
+    color: var(--head-colo);
+    border: 0;
+}  
+tbody tr:nth-child(even){
+    background-color: var(--zebra);
+}
+
+th, td{
+    border: 1px solid var(--fade);
+    padding: 1rem;
+}
+
+thead th{
+    background-color: var(--shadow);
+    color: var(--head-colo);
+}
