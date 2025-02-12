@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harold Brahms Ortega Villavicencio - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Harold B. Ortega, course assignment portal">
+    <meta name="author" content="Harold Brahms Ortega Villavicencio">
+    <meta property="og:title" content="Harold Brahms Ortega Villavicencio - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mir-s3-cdn-cf.behance.net/project_modules/source/3396cf62867677.5a9e7f2910860.jpg">
+    <meta property="og:url" content="https://woodpecker09.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/switch.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/burgerMenu.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/formvalidation.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Harold B. Ortega Profile Picture" width="75" height="100" id="profilePic" loading="lazy">
+        <span>Harold B. Ortega</span>
+        <div id="colorTheme">
+            <input type="checkbox" id="theme">
+            <label for="theme" class="toggleSwitch">
+                    <img src="images/moon.svg" alt="moon icon" class="moon">
+                    <img src="images/sun.svg" alt="sun icon" class="sun">
+            </label>
+        </div>
+    </header>
+
+    <nav>
+        <button id="menuButton" aria-label="Menu"></button>
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html" class="active">Form</a>
+    </nav>
+    <main>
+        <div id="formmessage"></div>
+        <form method="GET" action="record.html" class="wf1">
+            <label>Username* <input type="text" id="username" name="username" required title="Please enter Username"></label>
+            <label>Password* <input type="password" pattern="[a-zA-Z0-9]{8,10}" id="password" name="password" required  title="Password must be at least eight (8) characters long and can only be alpha-numeric"></label>
+            <label>Confirmation Password* <input type="password" pattern="[a-zA-Z0-9]{8,10}" id="password2" name="password2" required  title="Re-enter Password"></label>
+            <label>Email* <input type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email" name="email"title="Please enter a valid email address" placeholder="pwc@byui.edu" required></label>
+            
+            <label>Rate the page: 
+                <div id="rangevalue">1</div>
+                <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+            <input type="submit" value="Validate Form">
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 👾 Harold B. Ortega Villavicencio 👾 Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

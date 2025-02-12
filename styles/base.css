@@ -91,7 +91,7 @@ nav a{
 	content: "x";
 } 
 
-nav a:first-of-type {
+.active{
     background-color: rgba(0,0,0,0.3);
 }
 

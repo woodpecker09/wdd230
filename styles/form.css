@@ -1,0 +1,72 @@
+:root{
+    --wrong-check: red;
+    --good-check: green;
+    --number-color:navy;
+    --sumid-back-color: rgb(128, 211, 128);;
+    --boder-color: rgba(0, 0, 0, 0.5);
+}
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#formmessage {
+	margin: 10px;
+	padding: 0.5rem;
+	color: var(--wrong-check);
+}
+
+.wf1{
+    grid-column: 1/4;
+    border: 1px solid var(--boder-color);
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+.wf1 label{
+    display: block;
+    padding: 1rem;
+}
+.wf1 input[type="text"], 
+.wf1 input[type="password"],
+.wf1 input[type="email"]{
+    display: block;
+    border: 1px solid var(--boder-color);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+.wf1 input:required {
+    border-left: solid  8px var(--wrong-check);
+}
+
+.wf1 input:required:valid {
+    border-left: solid  8px var(--good-check);
+}
+
+#r {
+	width: 200px;
+	margin-bottom: 0;
+}
+
+#rangevalues {
+	display: flex;
+    margin: 0 0 0 3px;
+	width: 205px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: var(--number-color);
+}
+
+.wf1 input[type="submit"]{
+    padding: 1rem;
+    margin: 0 0 0 15px;
+    background-color: var(--sumid-back-color);
+    border-radius: 1rem;
+    font-size: large;
+    font-weight: 700;
+}
