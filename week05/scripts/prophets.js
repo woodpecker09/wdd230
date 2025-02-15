@@ -20,7 +20,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
-        card.appendChild(fullName); //fill in the blank
+        card.appendChild(fullName);
         card.appendChild(portrait);
 
         cards.appendChild(card);
