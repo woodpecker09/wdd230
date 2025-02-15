@@ -1,0 +1,33 @@
+{
+    "familyName":"Smith",
+    "moveDate":2000,
+    "menbersNUM":3,
+    "bishopVis":true,
+    "indvFamilyMenbers":[
+        {
+            "menber1":[{
+                "name":"Carld Smith",
+                "gender":"M",
+                "birthday":1980
+            }
+            ]
+        },
+        {
+            "menber2":[{
+                "name":"Janet Smith",
+                "gender":"F",
+                "birthday":1983
+            }
+            ]
+        },
+        {
+            "menber3":[{
+                "name":"Robert Smith",
+                "gender":"M",
+                "birthday":2015
+            }
+            ]
+        }
+
+    ]
+}
