@@ -37,4 +37,8 @@
         grid-column: 2/4;
    }
    
+   .menbinfo{
+    display: inline-block;
+    grid-column: 3/4;
+    }
 }

@@ -100,7 +100,7 @@ header{
 	content: "x";
 } 
 
-.mainNav a:first-of-type {
+.active {
     background-color: rgba(0,0,0,0.3);
 }
 
@@ -256,4 +256,76 @@ footer{
 footer nav a{
     text-decoration: none;
     cursor: pointer;
+}
+.wf1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.wf1 label{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"]{
+    display: block;
+    padding: 0.85rem;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+.wf1 div{
+    color: #6B331E;
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.wf1 .membership{
+    margin-top: 10px;
+    padding: 0;
+}
+.menbinfo{
+    display: inline-block;
+    grid-column: 1/2;
+    }
+.menbinfo section{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.meninfo1 {
+    background-color: white;
+}
+
+.meninfo2 {
+   background-color:  #c8884d;
+}
+
+.meninfo3 {
+   background-color:  #cccccc;
+}
+
+.meninfo4 {
+   background-color:  #f8de8a;
+}
+
+.wf1 input[type="submit"]{
+    padding: 1rem;
+    font-size: larger;
+    background-color: var(--links-color);
+    color: var(--title-color);
+    border-style: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.wf1 input:required{
+    border-left: 10px solid red;
+}
+
+.wf1 input:required:valid{
+    border-left: 10px solid green;
 }
