@@ -8,7 +8,7 @@ console.log(learnAct);
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data.weeks[0]);
+    console.log(data.weeks);
     displayLinks(data.weeks);
 }
 
