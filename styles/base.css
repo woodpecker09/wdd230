@@ -189,3 +189,10 @@ iframe{
     font-size: medium;
     font-weight: 500;
 }
+
+#weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
