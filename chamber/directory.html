@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/burgerMenu.js" defer></script>
     <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/getMenbers.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,35 +29,18 @@
         <h1 class="title">Provo UT <span class="subtitle">Chamber of Commerce Project</span></h1>
         <nav class="mainNav">
             <button id="menuButton" aria-label="Menu"></button>
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html" >Home</a>
             <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
+            <a href="directory.html" class="active">Directory</a>
             <a href="join.html">Join</a>
         </nav>     
     </header>
-    
-
+    <div class="gri-list">
+        <button id="grid"><img src="images/grid-svgrepo-com.svg" alt="grid image buttom" width="20"></button>
+        <button id="list"><img src="images/list-vgrepo-com.svg" alt="list image bottom" width="20"></button>
+    </div>
     <main>
-        <div class="banner">
-            <picture class="heroImg">
-                <source media="(min-width: 1000px)" srcset="https://placehold.co/1500x750">
-                <source media="(min-width: 500px)" srcset="https://placehold.co/1000x500">
-                <img src="https://placehold.co/500x250" alt="a hero image" width="500" height="250">
-            </picture>
-            <a href="#" class="callToAction">JOIN HERE</a>
-        </div>
-        <section id="events" class="card">
-            <h2>current-events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-        <section id="weather" class="card">
-            <h2>weather</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-        <section id="spotlight" class="card">
-            <h2>spotlight</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
+        <div id="companies" class="companiesGrid"></div>
     </main>
     <footer>
         <nav>

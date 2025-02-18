@@ -1,6 +1,5 @@
 :root{
     --font-family-info:"Montserrat", Arial;
-    --font-family-title: "Roboto", Arial;
     --background-color-b:  rgb(245, 219, 182);
     --title-color: #F2F1EF;
     --info-color: #170300;
@@ -12,8 +11,10 @@
     --white-faint: rgba(255,255,255,0.2);
     --days:#ff9f89;
     --days-color: #272726;
+    --zebra: hsl(21, 100%, 91%);
 }
 body{
+    font-family: var(--font-family-title);
     background-color: var(--background-color-b);
 }
 header, main, footer{
@@ -328,4 +329,39 @@ footer nav a{
 
 .wf1 input:required:valid{
     border-left: 10px solid green;
+}
+
+.gri-list{
+    justify-self: center;
+    padding: 1rem;
+}
+.companiesGrid{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.companiesList{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+
+.companiesList .companieCard:nth-child(even){
+    background-color: var(--zebra);
+}
+
+
+.companiesList .companieCard img{
+    display: none;
+}
+
+.companieCard{
+    margin: 1.25rem;
+    padding: 0.35rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px #777;
+    border: 1px solid #bbb;
+    align-items: center; 
+    text-align: center;
 }

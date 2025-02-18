@@ -41,4 +41,11 @@
     display: inline-block;
     grid-column: 3/4;
     }
+
+    .companiesList .companieCard{
+        display: flex;
+        gap: 5%;
+        text-align: center;
+        padding: 1rem;
+    }
 }

@@ -1,0 +1,68 @@
+{
+    "companies":[
+        {
+            "companie": "companie 1",
+            "name":"Caselle",
+            "address":"1656 S East Bay Blvd Ste 100, Provo, UT 84606",
+            "phone":"(801) 850-5000",
+            "url": "https://www.caselle.com/",
+            "memblvl": "silver",
+            "img":"images/companie1.jpg"
+        },
+        {
+            "companie": "companie 2",
+            "name":"WW Clyde",
+            "address":"275 N University Ave, Provo, UT 84601",
+            "phone":"(801) 802-6800",
+            "url": "https://wwclyde.net/",
+            "memblvl": "gold",
+            "img":"images/companie2.jpg"
+        },
+        {
+            "companie": "companie 3",
+            "name":"Arlington Scientific",
+            "address":"80 N 100 E, Provo, UT 84606",
+            "phone":"(801) 489-8911",
+            "url": "https://www.arlingtonscientific.com/",
+            "memblvl": "silver",
+            "img":"images/companie3.jpg"
+        },
+        {
+            "companie": "companie 4",
+            "name":"Rocketship, Inc.",
+            "address":"110 S 300 W, Provo, UT 84601",
+            "phone":"(801) 373-1922",
+            "url": "https://www.rocketshipdesign.com/",
+            "memblvl": "gold",
+            "img":"images/companie4.jpg"
+        },
+        {
+            "companie": "companie 5",
+            "name":"Wallaroo Media",
+            "address":"78 W Center St, Provo, UT 84601",
+            "phone":"(801) 432-0850",
+            "url": "https://wallaroomedia.com/",
+            "memblvl": "bronce",
+            "img":"images/companie5.jpg"
+        },
+        {
+            "companie": "companie 6",
+            "name":"H&R Block",
+            "address":"110 S 500 W, Provo, UT 84601",
+            "phone":"(801) 374-2000",
+            "url": "https://www.hrblock.com/",
+            "memblvl": "silver",
+            "img":"images/companie6.jpg"
+        },
+        {
+            "companie": "companie 7",
+            "name":"Fundwise Capital",
+            "address":"180 N University Ave, Provo, UT 84601",
+            "phone":"(888) 741-0441",
+            "url": "https://www.fundwisecapital.com/",
+            "memblvl": "gold",
+            "img":"images/companie7.jpg"
+        }
+
+    ]
+}
