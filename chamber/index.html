@@ -19,11 +19,14 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/burgerMenu.js" defer></script>
     <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
 </head>
 <body>
     <header>
-        <a href="#" >
-            <img src="https://placehold.co/50x50" alt="logo" class="logo">
+        <a href="index.html" >
+            <img src="images/profile.webp" alt="logo" class="logo">
         </a>
         <h1 class="title">Provo UT <span class="subtitle">Chamber of Commerce Project</span></h1>
         <nav class="mainNav">
@@ -39,35 +42,45 @@
     <main>
         <div class="banner">
             <picture class="heroImg">
-                <source media="(min-width: 1000px)" srcset="https://placehold.co/1500x750">
-                <source media="(min-width: 500px)" srcset="https://placehold.co/1000x500">
-                <img src="https://placehold.co/500x250" alt="a hero image" width="500" height="250">
+                <source media="(min-width: 1000px)" srcset="images/largeimage1.webp">
+                <source media="(min-width: 500px)" srcset="images/medium1.webp">
+                <img src="images/small1.webp" alt="a hero image" width="500" height="250">
             </picture>
-            <a href="#" class="callToAction">JOIN HERE</a>
+            <a href="join.html" class="callToAction">JOIN HERE</a>
         </div>
         <section id="events" class="card">
             <h2>current-events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>We are thrilled to invite you to our upcoming Chamber of Commerce event this wednesday at 7:00 p.m. Join us for an evening of networking, insightful discussions, and community-building.</p>
         </section>
         <section id="weather" class="card">
             <h2>weather</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div id="weatherInf"></div>
         </section>
         <section id="spotlight" class="card">
             <h2>spotlight</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div id="spotlightInf"></div>
         </section>
+        <button id="closeBanner"></button>
+        <div class="banner2">
+            <picture class="heroImg">
+                <source media="(min-width: 1000px)" srcset="images/meetinghero.webp">
+                <source media="(min-width: 500px)" srcset="images/meetingmedium.webp">
+                <img src="images/meetingsmall.webp" alt="a hero image" width="500" height="250">
+            </picture>
+            <p class="callToAction2">DO NOT MISS OUR MEETHINGS EVERY WEDNESDAY AT 7:00 P.M.</p>
+        </div>
+
     </main>
     <footer>
         <nav>
             <a href="https://www.facebook.com">
-                <img src="#" alt="Facebook">
+                <img src="images/facebook.webp" alt="Facebook">
             </a>
             <a href="https://www.instagram.com">
-                <img src="#" alt="Twitter">
+                <img src="images/instagram.webp" alt="Twitter">
             </a>
             <a href="https://twitter.com">
-                <img src="#" alt="Instagram">
+                <img src="images/twitter.webp" alt="Instagram">
             </a>
         </nav>
             

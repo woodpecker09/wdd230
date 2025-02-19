@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 769px){
     .mainNav{
         display: flex; 
         justify-content: space-evenly;
@@ -39,7 +39,7 @@
    
    .menbinfo{
     display: inline-block;
-    grid-column: 3/4;
+    grid-column: 2/4;
     }
 
     .companiesList .companieCard{
@@ -47,5 +47,10 @@
         gap: 5%;
         text-align: center;
         padding: 1rem;
+    }
+
+    .banner2{
+        grid-column: 1/4;
+        position: relative;
     }
 }

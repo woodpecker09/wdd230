@@ -12,7 +12,6 @@ listbutton.addEventListener("click", () => {
 });
 
 
-console.log(divel);
 async function apiFetch() {
     try {
       const response = await fetch("./data/members.json");
@@ -27,7 +26,7 @@ async function apiFetch() {
     }
   }
 
-  function displayCard(companies) {
+function displayCard(companies) {
     companies.forEach(companie => {
         const card = document.createElement('div');
         const comImg = document.createElement('img')

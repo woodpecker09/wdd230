@@ -39,12 +39,10 @@ header, main, footer{
     padding: 0;
 }
 
-main picture img {
+.heroImg img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    vertical-align: middle;
-  }
+}
 
 header{
     display: grid;
@@ -77,7 +75,7 @@ header{
     display: block;
 }
 
-#menuButton {
+#menuButton{
 	display: block;
 	font-size: 2rem;
 	font-weight:700;
@@ -114,8 +112,6 @@ header{
     padding: 1rem;
 }
 
-
-/* ------sidebar----- */
 #sidebar{
     justify-self: center;
     justify-content: center;
@@ -154,7 +150,6 @@ header{
     height: auto;
 }
 
-/* ------calendar------ */
 .calendar-container {
     width: 350px;
     text-align: center;
@@ -213,13 +208,18 @@ header{
     font-size: 3rem;
 }
 
-/* pictures */
+.provoPics{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
 .provoPic img{
     margin-top: 1rem;
-    
+    max-width: 100%;
+
 }
 
-/* ----main---- */
 main{
     margin: 0 auto;
     display: grid;
@@ -230,10 +230,19 @@ main{
 }
 
 .callToAction{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--title-color);
+    font-size: 1.5rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .2rem .75rem;
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.callToAction:hover{
+   font-size: 2rem;
 }
 
 .card {
@@ -330,6 +339,9 @@ footer nav a{
 .wf1 input:required:valid{
     border-left: 10px solid green;
 }
+textarea{
+    display: block;
+}
 
 .gri-list{
     justify-self: center;
@@ -364,4 +376,64 @@ footer nav a{
     border: 1px solid #bbb;
     align-items: center; 
     text-align: center;
+}
+.companieCard a{
+    color: black;
+}
+
+
+#weatherInf{
+    text-align: center;
+}
+
+#spotlightInf{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.banner2{
+    position: relative;
+}
+
+.callToAction2{
+    padding: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--white-faint);
+}
+
+
+
+#closeBanner:hover{
+    transform:rotate(180deg);
+    transition: 1s;
+}
+
+#closeBanner{
+    display: block;
+	font-size: 1.5rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .2rem .75rem;
+	background-color: var(--txt-color-title);
+	color: var(--nav-back-color);
+    justify-self: start;
+    border: 1px solid var(--txt-color-title);
+    border-radius: 100%;
+}
+
+#closeBanner::before{
+    content: "❌";
+}
+#closeBanner.open::before{
+    content: "🔻";
+}
+
+.close{
+    display: none;
 }

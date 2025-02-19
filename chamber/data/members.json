@@ -6,7 +6,7 @@
             "address":"1656 S East Bay Blvd Ste 100, Provo, UT 84606",
             "phone":"(801) 850-5000",
             "url": "https://www.caselle.com/",
-            "memblvl": "silver",
+            "memblvl": "bronce",
             "img":"images/companie1.jpg"
         },
         {
@@ -15,7 +15,7 @@
             "address":"275 N University Ave, Provo, UT 84601",
             "phone":"(801) 802-6800",
             "url": "https://wwclyde.net/",
-            "memblvl": "gold",
+            "memblvl": "bronce",
             "img":"images/companie2.jpg"
         },
         {
@@ -60,7 +60,7 @@
             "address":"180 N University Ave, Provo, UT 84601",
             "phone":"(888) 741-0441",
             "url": "https://www.fundwisecapital.com/",
-            "memblvl": "gold",
+            "memblvl": "bronce",
             "img":"images/companie7.jpg"
         }
 
